@@ -24,9 +24,8 @@ body {
 
 .content-box {
     background-color: white;
-    border: 5px  #ccc; /* Bordo tratteggiato */
-    padding: 50px;
-    border-radius: 15px; /* Angoli leggermente arrotondati */
+    padding: 30px;
+    border-radius: 40px; /* Angoli leggermente arrotondati */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Leggera ombra */
     text-align: center; /* Centra il testo all'interno del riquadro */
     max-width: 50%; /* Imposta una larghezza massima per il riquadro */
@@ -43,9 +42,8 @@ body {
 }
 
 .content-box p {
-    color: #555;
-    line-height: 1.6;
-    margin-bottom: 15px;
+  text-align:justify;  
+  font-size: 200%;
 }
 
 .content-box ul {
@@ -128,4 +126,33 @@ footer {
 main {
     padding: 20px;
     margin-bottom: 60px; /* Aggiunge spazio per evitare sovrapposizioni con il footer fisso */
+}
+
+@media (max-width: 768px) {
+    .full-width-title h1 {
+        font-size: 1.5em; /* Riduci la dimensione del titolo su schermi piccoli */
+        padding: 15px;
+    }
+
+    .main-nav ul {
+        justify-content: center; /* Forza la centratura su schermi piccoli */
+    }
+
+    .main-nav li {
+        margin: 5px; /* Ridotto ulteriormente il margine */
+    }
+
+    .main-nav a {
+        font-size: 0.9em; /* Riduci la dimensione del testo dei link */
+        padding: 6px 10px;
+    }
+
+    main {
+        padding: 15px; /* Riduci il padding del main */
+    }
+
+    .content-box {
+        padding: 20px; /* Riduci il padding del content-box */
+        text-align: left; /* Allinea il testo a sinistra su schermi piccoli per una migliore lettura */
+    }
 }
