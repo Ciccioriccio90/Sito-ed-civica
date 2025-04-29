@@ -1,0 +1,131 @@
+/* style.css */
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-image: url("https://www.fondazionescuolapatrimonio.it/wp-content/uploads/2023/10/La-trasformazione-digitale-del-patrimonio-culturale.jpg") ;
+    background-size: cover;
+}
+
+/* Stili per il titolo a tutta larghezza */
+.full-width-title {
+    background-color: #333; /* Sfondo scuro per il titolo */
+    color: white; /* Testo bianco */
+    text-align: center; /* Centra il testo orizzontalmente */
+    padding: 20px; /* Aggiunge un po' di spazio interno */
+    box-sizing: border-box; /* Assicura che padding e bordo non aumentino le dimensioni totali */
+    width: 100%; /* Occupa tutta la larghezza del viewport */
+}
+
+.full-width-title h1 {
+    margin: 0; /* Rimuove il margine predefinito dell'h1 */
+    font-size: 2em; /* Dimensione del testo */
+}
+
+.content-box {
+    background-color: white;
+    border: 5px  #ccc; /* Bordo tratteggiato */
+    padding: 50px;
+    border-radius: 15px; /* Angoli leggermente arrotondati */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Leggera ombra */
+    text-align: center; /* Centra il testo all'interno del riquadro */
+    max-width: 50%; /* Imposta una larghezza massima per il riquadro */
+    box-sizing: content-box;
+    margin-left: auto;
+    margin-right: auto;
+    max-height: 100%;
+    opacity: 0.6;
+}
+
+.content-box h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.content-box p {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.content-box ul {
+    list-style: square;
+    padding-left: 20px;
+    margin-bottom: 15px;
+    text-align: left; /* Allinea il testo della lista a sinistra */
+}
+
+.content-box img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+/* Stili per la navbar */
+.main-nav {
+    background-color: #f8f8f8; /* Sfondo chiaro per la navbar */
+    padding: 10px 0; /* Aggiunge un po' di spazio verticale */
+    border-bottom: 1px solid #ddd; /* Un bordo sottile in basso */
+    opacity: 1;
+}
+
+.main-nav ul {
+    list-style: none; /* Rimuove i pallini della lista */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Utilizza Flexbox per allineare gli elementi orizzontalmente */
+    justify-content: center; /* Centra gli elementi della navbar */
+}
+
+.main-nav li {
+    margin: 0 15px; /* Spazio tra gli elementi della navbar */
+}
+
+.main-nav a {
+    position: relative; /* Necessario per posizionare lo pseudo-elemento */
+    text-decoration: none; /* Rimuove la sottolineatura dei link */
+    color: #333; /* Colore del testo dei link */
+    font-weight: bold;
+    padding: 5px 0; /* Spazio per far apparire il rettangolo sotto */
+    overflow: hidden; /* Importante per nascondere l'overflow iniziale */
+    transition: color 0.3s ease; /* Aggiunge una transizione плавную al colore */
+}
+
+.main-nav a::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px; /* Posiziona il rettangolo appena sotto il testo */
+    width: 100%;
+    height: 2px;
+    background-color: #007bff; /* Colore del rettangolo */
+    transform: scaleX(0); /* Inizialmente scalato a 0 sull'asse X (invisibile) */
+    opacity: 0; /* Inizialmente invisibile */
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out; /* Anima la scalatura e l'opacità */
+}
+
+.main-nav a:hover {
+    color: #007bff; /* Cambia colore al passaggio del mouse */
+}
+
+.main-nav a:hover::before {
+    transform: scaleX(1); /* Scala a 1 sull'asse X (visibile) */
+    opacity: 1; /* Rende il rettangolo opaco */
+}
+
+/* Stili di base per il footer (opzionale) */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    font-size: 0.8em;
+    position: fixed; /* Posiziona il footer in basso */
+    bottom: 0;
+    width: 100%;
+}
+
+/* Stili per il contenuto principale (opzionale) */
+main {
+    padding: 20px;
+    margin-bottom: 60px; /* Aggiunge spazio per evitare sovrapposizioni con il footer fisso */
+}
