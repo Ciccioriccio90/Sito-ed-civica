@@ -198,21 +198,6 @@ footer {
         align-items: flex-start; /* Allinea gli elementi a sinistra su schermi piccoli */
     }
 
-    .content-box.image-left img {
-        max-width: 80%; /* Rendi l'immagine più grande su schermi piccoli */
-        margin-right: 0; /* Rimuovi il margine a destra su schermi piccoli */
-        margin-bottom: 10px; /* Aggiungi un po' di spazio sotto l'immagine */
-        border-radius: 10px; /* Riduci l'arrotondamento su schermi piccoli */
-    }
-
-    .content-box-right {
-        padding: 20px; /* Riduci il padding del content-box-right */
-        text-align: left; /* Allinea il testo a sinistra su schermi piccoli */
-        max-width: 90%; /* Aumenta la larghezza massima su schermi piccoli */
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 20px; /* Aggiungi un po' di spazio sopra */
-    }
 
     .content-box-right h2 {
         text-align: left; /* Allinea il titolo a sinistra su schermi piccoli */
