@@ -3,7 +3,7 @@
 body {
     margin: 0;
     font-family: sans-serif;
-    background-image: url("ChatGPT Image 30 apr 2025, 14_42_33.png") ;
+    background-image: url("ChatGPT Image 30 apr 2025, 18_18_15.png") ;
     background-size: cover; /* Scala l'immagine per coprire l'intero contenitore */
     background-repeat: no-repeat; /* Evita la ripetizione dell'immagine */
 }
@@ -30,62 +30,16 @@ body {
     text-align: center; /* Centra il testo all'interno del riquadro */
     max-width: 50%; /* Imposta una larghezza massima per il riquadro */
     box-sizing: content-box;
-    margin-left: 5%;
-    margin-right: auto;
+    margin-left: 23.5%;
     max-height: 100%;
-    opacity: 0.6;
-    margin-top: 10%;
+ 
     transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out, box-shadow 0.3s ease-in-out; 
-  
 }
 
 .content-box:hover {
     transform: scale(1.05); /* Ingrandisce l'elemento del 5% al passaggio del mouse */
     opacity: 0.8; /* Rende l'elemento leggermente più opaco al passaggio del mouse */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Aumenta l'ombra al passaggio del mouse */
-}
-
-.content-box.image-left img {
-    max-width: 30%; /* Regola la larghezza dell'immagine */
-    height: auto;
-    margin-right: 20px; /* Aggiungi spazio tra immagine e testo */
-    border-radius: 50%; /* Rende l'immagine circolare (scontorna i bordi) */
-    object-fit: cover; /* Assicura che l'immagine copra l'area circolare senza distorsioni */
-}
-
-
-
-.content-box-right {
-    background-color: white;
-    padding: 25px;
-    border-radius: 40px; /* Angoli leggermente arrotondati */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Leggera ombra */
-    text-align: center; /* Centra il testo all'interno del riquadro */
-    max-width: 50%; /* Imposta una larghezza massima per il riquadro */
-    box-sizing: content-box;
-    margin-left: auto;
-    margin-right: 5%;
-    max-height: 100%;
-    opacity: 0.6;
-    margin-top: 10%;
-    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Transizioni плавные */
-}
-
-.content-box-right:hover {
-    transform: scale(1.05); /* Ingrandisce l'elemento del 5% al passaggio del mouse */
-    opacity: 0.8; /* Rende l'elemento leggermente più opaco al passaggio del mouse */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Aumenta l'ombra al passaggio del mouse */
-}
-
-.content-box-right h2 {
-    color: #333;
-    margin-bottom: 20px;
-    text-align: center; /* Centra il titolo nel riquadro a destra */
-}
-
-.content-box-right p {
-    text-align:justify;
-    font-size: 200%;
 }
 
 
@@ -97,10 +51,14 @@ body {
 .content-box p {
     text-align:justify;
     font-size: 200%;
-   
 }
 
-
+.content-box ul {
+    list-style: square;
+    padding-left: 20px;
+    margin-bottom: 15px;
+    text-align: left; /* Allinea il testo della lista a sinistra */
+}
 
 
 /* Stili per la navbar */
@@ -166,7 +124,11 @@ footer {
     width: 100%;
 }
 
-
+/* Stili per il contenuto principale (opzionale) */
+main {
+    padding: 20px;
+    margin-bottom: 60px; /* Aggiunge spazio per evitare sovrapposizioni con il footer fisso */
+}
 
 @media (max-width: 768px) {
     .full-width-title h1 {
@@ -198,31 +160,9 @@ footer {
         align-items: flex-start; /* Allinea gli elementi a sinistra su schermi piccoli */
     }
 
-    .content-box.image-left img {
-        max-width: 80%; /* Rendi l'immagine più grande su schermi piccoli */
-        margin-right: 0; /* Rimuovi il margine a destra su schermi piccoli */
-        margin-bottom: 10px; /* Aggiungi un po' di spazio sotto l'immagine */
-        border-radius: 10px; /* Riduci l'arrotondamento su schermi piccoli */
-    }
-
-    .content-box-right {
-        padding: 20px; /* Riduci il padding del content-box-right */
-        text-align: left; /* Allinea il testo a sinistra su schermi piccoli */
-        max-width: 90%; /* Aumenta la larghezza massima su schermi piccoli */
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 20px; /* Aggiungi un po' di spazio sopra */
-    }
-
-    .content-box-right h2 {
-        text-align: left; /* Allinea il titolo a sinistra su schermi piccoli */
-    }
-
     .content-box p {
         font-size: 150%; /* Riduci la dimensione del testo su schermi piccoli */
     }
 
-    .content-box-right p {
-        font-size: 150%; /* Riduci la dimensione del testo su schermi piccoli */
-    }
+    
 }
