@@ -24,14 +24,29 @@ body {
 
 .content-box {
     background-color: white;
-    padding: 30px;
+    padding: 25px;
+    border-radius: 40px; /* Angoli leggermente arrotondati */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Leggera ombra */
+    text-align: center; /* Centra il testo all'interno del riquadro */
+    max-width: 50%; /* Imposta una larghezza massima per il riquadro */
+    box-sizing: content-box;
+    margin-left: 5%;
+    margin-right: auto;
+    max-height: 100%;
+    opacity: 0.6;
+}
+
+
+.content-box-right {
+    background-color: white;
+    padding: 25px;
     border-radius: 40px; /* Angoli leggermente arrotondati */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Leggera ombra */
     text-align: center; /* Centra il testo all'interno del riquadro */
     max-width: 50%; /* Imposta una larghezza massima per il riquadro */
     box-sizing: content-box;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: 5%;
     max-height: 100%;
     opacity: 0.6;
 }
@@ -54,6 +69,29 @@ body {
 }
 
 .content-box img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+.content-box-right h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.content-box-right p {
+  text-align:justify;  
+  font-size: 200%;
+}
+
+.content-box-right ul {
+    list-style: square;
+    padding-left: 20px;
+    margin-bottom: 15px;
+    text-align: left; /* Allinea il testo della lista a sinistra */
+}
+
+.content-box-right img {
     max-width: 100%;
     height: auto;
     margin-top: 20px;
