@@ -4,9 +4,18 @@ body {
     margin: 0;
     font-family: sans-serif;
     background-image: url("ChatGPT Image 30 apr 2025, 14_42_33.png") ;
-    background-size: cover; /* Scala l'immagine per coprire l'intero contenitore */
-    background-repeat: no-repeat; /* Evita la ripetizione dell'immagine */
+    background-size: cover; /* Visualizza l'intera immagine mantenendo le proporzioni */
+    background-repeat: no-repeat; /* Evita la ripetizione */
 }
+
+.body-archivi-digitali {
+    margin: 0;
+    font-family: sans-serif;
+    background-image: url("ChatGPT Image 30 apr 2025, 18_18_15.png") ;
+    background-size: contain; /* Visualizza l'intera immagine mantenendo le proporzioni */
+    background-repeat: no-repeat; /* Evita la ripetizione */
+}
+
 
 /* Stili per il titolo a tutta larghezza */
 .full-width-title {
@@ -100,6 +109,39 @@ body {
    
 }
 
+.content-box-spiegazioni {
+    background-color: white;
+    padding: 25px;
+    border-radius: 40px; /* Angoli leggermente arrotondati */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Leggera ombra */
+    text-align: center; /* Centra il testo all'interno del riquadro */
+    max-width: 50%; /* Imposta una larghezza massima per il riquadro */
+    box-sizing: content-box;
+    margin-left: 5%;
+    margin-right: auto;
+    max-height: 100%;
+    
+    margin-top: 10%;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out, box-shadow 0.3s ease-in-out; 
+  
+}
+
+.content-box-spiegazioni:hover {
+    transform: scale(1.05); /* Ingrandisce l'elemento del 5% al passaggio del mouse */
+    opacity: 0.9; /* Rende l'elemento leggermente più opaco al passaggio del mouse */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Aumenta l'ombra al passaggio del mouse */
+}
+
+.content-box-spiegazioni h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.content-box-spiegazioni p {
+    text-align:justify;
+    font-size: 200%;
+   
+}
 
 
 
@@ -161,9 +203,10 @@ footer {
     padding: 10px;
     background-color: #333;
     font-size: 0.8em;
-    position: fixed; /* Posiziona il footer in basso */
+    position:static; /* Posiziona il footer in basso */
     bottom: 0;
     width: 100%;
+    margin-top: 10%;
 }
 
 
