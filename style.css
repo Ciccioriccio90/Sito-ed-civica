@@ -6,13 +6,24 @@ body {
     background-image: url("ChatGPT Image 30 apr 2025, 14_42_33.png") ;
     background-size: cover; /* Visualizza l'intera immagine mantenendo le proporzioni */
     background-repeat: no-repeat; /* Evita la ripetizione */
+    background-position: 50%;
 }
 
 .body-archivi-digitali {
     margin: 0;
     font-family: sans-serif;
     background-image: url("ChatGPT Image 30 apr 2025, 18_18_15.png") ;
-    background-size: contain; /* Visualizza l'intera immagine mantenendo le proporzioni */
+    background-size: cover; /* Visualizza l'intera immagine mantenendo le proporzioni */
+    background-position: 50%; /* Centra l'immagine */
+    background-repeat: no-repeat; /* Evita la ripetizione */
+}
+
+.body-VisiteVirtuali {
+    margin: 0;
+    font-family: sans-serif;
+    background-image: url("ChatGPT Image 30 apr 2025, 18_18_15.png") ;
+    background-size: cover; /* Visualizza l'intera immagine mantenendo le proporzioni */
+    background-position: 50%; /* Centra l'immagine */
     background-repeat: no-repeat; /* Evita la ripetizione */
 }
 
@@ -211,7 +222,7 @@ footer {
 
 
 
-@media (max-width: 768px) {
+@media (max-width: 500px) {
     .full-width-title h1 {
         font-size: 1.5em; /* Riduci la dimensione del titolo su schermi piccoli */
         padding: 15px;
