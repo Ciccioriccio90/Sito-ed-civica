@@ -233,29 +233,28 @@ footer {
 
 
 
-/* Media query per telefoni (larghezza massima 500px) */
-@media (max-width: 500px) {
+/@media (max-width: 500px) {
     .full-width-title h1 {
         font-size: 1.5em;
         padding: 15px;
-        text-align: center; /* Mantieni la centratura su schermi piccoli */
+        text-align: center;
     }
 
     .main-nav ul {
-        justify-content: center; /* Forza la centratura su schermi piccoli */
-        flex-direction: column; /* Impila i link di navigazione su schermi piccoli */
-        align-items: center; /* Centra gli elementi della lista */
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
     }
 
     .main-nav li {
-        margin: 5px 0; /* Margine verticale e zero orizzontale */
+        margin: 5px 0;
     }
 
     .main-nav a {
         font-size: 0.9em;
         padding: 8px 12px;
-        display: block; /* Rendi i link elementi a blocco per occupare tutta la larghezza */
-        text-align: center; /* Centra il testo dei link */
+        display: block;
+        text-align: center;
     }
 
     main {
@@ -265,33 +264,53 @@ footer {
     .content-box {
         padding: 20px;
         text-align: left;
-        flex-direction: column; /* Impila immagine e testo */
+        flex-direction: column;
         align-items: flex-start;
     }
 
     .content-box img {
-        max-width: 100%; /* L'immagine occupa tutta la larghezza */
+        max-width: 100%;
         margin-right: 0;
-        margin-bottom: 15px; /* Aggiungi spazio sotto l'immagine */
+        margin-bottom: 15px;
     }
 
     .content-box-right {
-        flex-direction: column-reverse; /* Inverti l'ordine per mostrare prima il testo */
+        flex-direction: column-reverse;
     }
 
     .content-box-right img {
-        max-width: 100%; /* L'immagine occupa tutta la larghezza */
+        max-width: 100%;
         margin-left: 0;
-        margin-top: 15px; /* Aggiungi spazio sopra l'immagine */
+        margin-top: 15px;
     }
 
     .content-box h2, .content-box-right h2 {
         text-align: left;
-        font-size: 1.8em; /* Leggermente più grande per una migliore leggibilità */
+        font-size: 1.8em;
     }
 
     .content-box p, .content-box-right p {
-        font-size: 1em; /* Usa 'em' per una scalabilità relativa */
+        font-size: 1em;
+    }
+
+    /* Stili specifici per .content-box-spiegazioni su telefoni */
+    .content-box-spiegazioni {
+        max-width: 90%; /* Aumenta la larghezza su schermi piccoli */
+        margin-left: auto; /* Centra orizzontalmente */
+        margin-right: auto;
+        margin-top: 5%; /* Riduci il margine superiore */
+        padding: 20px;
+        border-radius: 20px; /* Angoli meno arrotondati per schermi piccoli */
+        font-size: 100%; /* Adatta la dimensione del testo */
+    }
+
+    .content-box-spiegazioni h2 {
+        font-size: 1.5em;
+        margin-bottom: 10px;
+    }
+
+    .content-box-spiegazioni p {
+        font-size: 1em;
     }
 }
 
@@ -308,7 +327,7 @@ footer {
     }
 
     .main-nav li {
-        margin: 0 10px; /* Leggermente più spazio rispetto al telefono */
+        margin: 0 10px;
     }
 
     .main-nav a {
@@ -322,18 +341,18 @@ footer {
 
     .content-box {
         padding: 25px;
-        flex-direction: row; /* Mantieni la disposizione orizzontale */
+        flex-direction: row;
         align-items: center;
         text-align: left;
     }
 
     .content-box img {
-        max-width: 30%; /* Immagine più piccola rispetto al desktop */
+        max-width: 30%;
         margin-right: 15px;
     }
 
     .content-box-right {
-        flex-direction: row-reverse; /* Mantieni l'ordine inverso */
+        flex-direction: row-reverse;
         text-align: right;
     }
 
@@ -344,14 +363,34 @@ footer {
 
     .content-box h2, .content-box-right h2 {
         font-size: 1.6em;
-        text-align: left; /* Allinea a sinistra su tablet per coerenza */
+        text-align: left;
     }
 
     .content-box-right h2 {
-        text-align: right; /* Sovrascrive per il box a destra */
+        text-align: right;
     }
 
     .content-box p, .content-box-right p {
+        font-size: 1.1em;
+    }
+
+    /* Stili specifici per .content-box-spiegazioni su tablet */
+    .content-box-spiegazioni {
+        max-width: 70%; /* Aumenta leggermente la larghezza su tablet */
+        margin-left: auto; /* Centra orizzontalmente */
+        margin-right: auto;
+        margin-top: 8%; /* Regola il margine superiore */
+        padding: 22px;
+        border-radius: 30px; /* Angoli leggermente meno arrotondati */
+        font-size: 150%; /* Adatta la dimensione del testo */
+    }
+
+    .content-box-spiegazioni h2 {
+        font-size: 1.8em;
+        margin-bottom: 15px;
+    }
+
+    .content-box-spiegazioni p {
         font-size: 1.1em;
     }
 }
