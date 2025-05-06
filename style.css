@@ -27,6 +27,16 @@ body {
     background-repeat: no-repeat; /* Evita la ripetizione */
 }
 
+.body-VisiteVirtuali {
+    margin: 0;
+    font-family: sans-serif;
+    background-image: url("ChatGPT Image 6 mag 2025, 10_04_22.png") ;
+    background-size: cover; /* Visualizza l'intera immagine mantenendo le proporzioni */
+    background-position: 50%; /* Centra l'immagine */
+    background-repeat: no-repeat; /* Evita la ripetizione */
+}
+
+
 
 /* Stili per il titolo a tutta larghezza */
 .full-width-title {
