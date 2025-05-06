@@ -233,46 +233,125 @@ footer {
 
 
 
+/* Media query per telefoni (larghezza massima 500px) */
 @media (max-width: 500px) {
     .full-width-title h1 {
-        font-size: 1.5em; /* Riduci la dimensione del titolo su schermi piccoli */
+        font-size: 1.5em;
         padding: 15px;
+        text-align: center; /* Mantieni la centratura su schermi piccoli */
     }
 
     .main-nav ul {
         justify-content: center; /* Forza la centratura su schermi piccoli */
+        flex-direction: column; /* Impila i link di navigazione su schermi piccoli */
+        align-items: center; /* Centra gli elementi della lista */
     }
 
     .main-nav li {
-        margin: 5px; /* Ridotto ulteriormente il margine */
+        margin: 5px 0; /* Margine verticale e zero orizzontale */
     }
 
     .main-nav a {
-        font-size: 0.9em; /* Riduci la dimensione del testo dei link */
-        padding: 6px 10px;
+        font-size: 0.9em;
+        padding: 8px 12px;
+        display: block; /* Rendi i link elementi a blocco per occupare tutta la larghezza */
+        text-align: center; /* Centra il testo dei link */
     }
 
     main {
-        padding: 15px; /* Riduci il padding del main */
+        padding: 15px;
     }
 
     .content-box {
-        padding: 20px; /* Riduci il padding del content-box */
-        text-align: left; /* Allinea il testo a sinistra su schermi piccoli per una migliore lettura */
-        flex-direction: column; /* Impila immagine e testo su schermi piccoli */
-        align-items: flex-start; /* Allinea gli elementi a sinistra su schermi piccoli */
+        padding: 20px;
+        text-align: left;
+        flex-direction: column; /* Impila immagine e testo */
+        align-items: flex-start;
     }
 
+    .content-box img {
+        max-width: 100%; /* L'immagine occupa tutta la larghezza */
+        margin-right: 0;
+        margin-bottom: 15px; /* Aggiungi spazio sotto l'immagine */
+    }
+
+    .content-box-right {
+        flex-direction: column-reverse; /* Inverti l'ordine per mostrare prima il testo */
+    }
+
+    .content-box-right img {
+        max-width: 100%; /* L'immagine occupa tutta la larghezza */
+        margin-left: 0;
+        margin-top: 15px; /* Aggiungi spazio sopra l'immagine */
+    }
+
+    .content-box h2, .content-box-right h2 {
+        text-align: left;
+        font-size: 1.8em; /* Leggermente più grande per una migliore leggibilità */
+    }
+
+    .content-box p, .content-box-right p {
+        font-size: 1em; /* Usa 'em' per una scalabilità relativa */
+    }
+}
+
+/* Media query per tablet (larghezza minima 501px e massima 768px) */
+@media (min-width: 501px) and (max-width: 768px) {
+    .full-width-title h1 {
+        font-size: 2em;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .main-nav ul {
+        justify-content: center;
+    }
+
+    .main-nav li {
+        margin: 0 10px; /* Leggermente più spazio rispetto al telefono */
+    }
+
+    .main-nav a {
+        font-size: 1em;
+        padding: 8px 12px;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    .content-box {
+        padding: 25px;
+        flex-direction: row; /* Mantieni la disposizione orizzontale */
+        align-items: center;
+        text-align: left;
+    }
+
+    .content-box img {
+        max-width: 30%; /* Immagine più piccola rispetto al desktop */
+        margin-right: 15px;
+    }
+
+    .content-box-right {
+        flex-direction: row-reverse; /* Mantieni l'ordine inverso */
+        text-align: right;
+    }
+
+    .content-box-right img {
+        max-width: 30%;
+        margin-left: 15px;
+    }
+
+    .content-box h2, .content-box-right h2 {
+        font-size: 1.6em;
+        text-align: left; /* Allinea a sinistra su tablet per coerenza */
+    }
 
     .content-box-right h2 {
-        text-align: left; /* Allinea il titolo a sinistra su schermi piccoli */
+        text-align: right; /* Sovrascrive per il box a destra */
     }
 
-    .content-box p {
-        font-size: 150%; /* Riduci la dimensione del testo su schermi piccoli */
-    }
-
-    .content-box-right p {
-        font-size: 150%; /* Riduci la dimensione del testo su schermi piccoli */
+    .content-box p, .content-box-right p {
+        font-size: 1.1em;
     }
 }
