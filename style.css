@@ -3,40 +3,58 @@
 body {
     margin: 0;
     font-family: sans-serif;
-    background-image: url("ChatGPT Image 30 apr 2025, 14_42_33.png") ;
+    background-image: url("ChatGPT Image 30 apr 2025, 14_42_33.png");
     background-size: cover; /* Visualizza l'intera immagine mantenendo le proporzioni */
     background-repeat: no-repeat; /* Evita la ripetizione */
-    background-position: 50%;
+    background-position: center; /* Centra l'immagine */
+    min-height: 100vh; /* Assicura che lo sfondo copra almeno l'altezza della viewport */
+    display: flex; /* Aggiungi per abilitare flexbox sul body */
+    flex-direction: column; /* Imposta la direzione degli elementi in colonna */
+    align-items: center; /* Centra gli elementi orizzontalmente */
+    justify-content: flex-start; /* Allinea gli elementi all'inizio (in alto) */
 }
 
 .body-archivi-digitali {
     margin: 0;
     font-family: sans-serif;
-    background-image: url("ChatGPT Image 30 apr 2025, 18_18_15.png") ;
+    background-image: url("ChatGPT Image 30 apr 2025, 18_18_15.png");
     background-size: cover; /* Visualizza l'intera immagine mantenendo le proporzioni */
-    background-position: 50%; /* Centra l'immagine */
+    background-position: center; /* Centra l'immagine */
     background-repeat: no-repeat; /* Evita la ripetizione */
+    min-height: 100vh; /* Assicura che lo sfondo copra almeno l'altezza della viewport */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
 }
 
 .body-VisiteVirtuali {
     margin: 0;
     font-family: sans-serif;
-    background-image: url("ChatGPT Image 1 mag 2025, 15_23_43.png") ;
+    background-image: url("ChatGPT Image 1 mag 2025, 15_23_43.png");
     background-size: cover; /* Visualizza l'intera immagine mantenendo le proporzioni */
-    background-position: 50%; /* Centra l'immagine */
+    background-position: center; /* Centra l'immagine */
     background-repeat: no-repeat; /* Evita la ripetizione */
+    min-height: 100vh; /* Assicura che lo sfondo copra almeno l'altezza della viewport */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
 }
 
 .body-Risorse {
     margin: 0;
     font-family: sans-serif;
-    background-image: url("ChatGPT Image 6 mag 2025, 10_04_22.png") ;
+    background-image: url("ChatGPT Image 6 mag 2025, 10_04_22.png");
     background-size: cover; /* Visualizza l'intera immagine mantenendo le proporzioni */
-    background-position: 50%; /* Centra l'immagine */
+    background-position: center; /* Centra l'immagine */
     background-repeat: no-repeat; /* Evita la ripetizione */
+    min-height: 100vh; /* Assicura che lo sfondo copra almeno l'altezza della viewport */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
 }
-
-
 
 /* Stili per il titolo a tutta larghezza */
 .full-width-title {
@@ -58,15 +76,14 @@ body {
     border-radius: 40px; /* Angoli leggermente arrotondati */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Leggera ombra */
     text-align: center; /* Centra il testo all'interno del riquadro */
-    max-width: 50%; /* Imposta una larghezza massima per il riquadro */
-    box-sizing: content-box;
-    margin-left: 5%;
-    margin-right: auto;
+    max-width: 80%; /* Aumenta la larghezza massima per centrare meglio */
+    box-sizing: border-box;
+    margin-left: 3%; /* Imposta il margine sinistro automatico */
+    margin-right: auto; /* Imposta il margine destro automatico */
     max-height: 100%;
     opacity: 0.6;
-    margin-top: 10%;
-    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out, box-shadow 0.3s ease-in-out; 
-  
+    margin-top: 5%; /* Ridotto il margine superiore per avvicinare al centro verticale */
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 .content-box:hover {
@@ -91,13 +108,13 @@ body {
     border-radius: 40px; /* Angoli leggermente arrotondati */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Leggera ombra */
     text-align: center; /* Centra il testo all'interno del riquadro */
-    max-width: 50%; /* Imposta una larghezza massima per il riquadro */
-    box-sizing: content-box;
-    margin-left: auto;
-    margin-right: 5%;
+    max-width: 80%; /* Aumenta la larghezza massima per centrare meglio */
+    box-sizing: border-box;
+    margin-left: auto; /* Imposta il margine sinistro automatico */
+    margin-right: 3%; /* Imposta il margine destro automatico */
     max-height: 100%;
     opacity: 0.6;
-    margin-top: 10%;
+    margin-top: 5%; /* Ridotto il margine superiore per avvicinare al centro verticale */
     transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Transizioni плавные */
 }
 
@@ -111,7 +128,7 @@ body {
     color: #333;
     margin-bottom: 20px;
     text-align: center; /* Centra il titolo nel riquadro a destra */
-    
+
 }
 
 .content-box-right p {
@@ -128,7 +145,7 @@ body {
 .content-box p {
     text-align:justify;
     font-size: 200%;
-   
+
 }
 
 .content-box-spiegazioni {
@@ -137,15 +154,15 @@ body {
     border-radius: 40px; /* Angoli leggermente arrotondati */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Leggera ombra */
     text-align: center; /* Centra il testo all'interno del riquadro */
-    max-width: 50%; /* Imposta una larghezza massima per il riquadro */
-    box-sizing: content-box;
-    margin-left: 5%;
-    margin-right: auto;
+    max-width: 80%; /* Aumenta la larghezza massima per centrare meglio */
+    box-sizing: border-box;
+    margin-left: auto; /* Imposta il margine sinistro automatico */
+    margin-right: auto; /* Imposta il margine destro automatico */
     max-height: 100%;
-    
-    margin-top: 10%;
-    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out, box-shadow 0.3s ease-in-out; 
-  
+
+    margin-top: 5%; /* Ridotto il margine superiore per avvicinare al centro verticale */
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+
 }
 
 .content-box-spiegazioni:hover {
@@ -162,7 +179,7 @@ body {
 .content-box-spiegazioni p {
     text-align:justify;
     font-size: 200%;
-   
+
 }
 
 
@@ -173,6 +190,7 @@ body {
     padding: 10px 0; /* Aggiunge un po' di spazio verticale */
     border-bottom: 1px solid #ddd; /* Un bordo sottile in basso */
     opacity: 1;
+    width: 100%; /* Assicura che la navbar occupi tutta la larghezza */
 }
 
 .main-nav ul {
@@ -225,10 +243,10 @@ footer {
     padding: 10px;
     background-color: #333;
     font-size: 0.8em;
-    position:static; /* Posiziona il footer in basso */
+    position: static; /* Posiziona il footer in basso */
     bottom: 0;
     width: 100%;
-    margin-top: 10%;
+    margin-top: auto; /* Spinge il footer in basso */
 }
 
 
@@ -266,6 +284,9 @@ footer {
         text-align: left;
         flex-direction: column;
         align-items: flex-start;
+        max-width: 90%; /* Aumenta la larghezza su schermi piccoli */
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .content-box img {
@@ -276,6 +297,9 @@ footer {
 
     .content-box-right {
         flex-direction: column-reverse;
+        max-width: 90%;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .content-box-right img {
@@ -287,6 +311,10 @@ footer {
     .content-box h2, .content-box-right h2 {
         text-align: left;
         font-size: 1.8em;
+    }
+
+    .content-box-right h2 {
+        text-align: left; /* Forza l'allineamento a sinistra anche su schermi piccoli */
     }
 
     .content-box p, .content-box-right p {
@@ -314,7 +342,17 @@ footer {
     }
 }
 
-/* Media query per tablet (larghezza minima 501px e massima 768px) */
+@media (max-width: 500px) {
+    body,
+    .body-archivi-digitali,
+    .body-VisiteVirtuali,
+    .body-Risorse {
+        background-position: center; /* Mantiene l'immagine centrata */
+        /* Potresti aggiungere altri stili specifici per schermi piccoli qui, se necessario */
+    }
+}
+
+/* Stili per schermi medi (da 501px a 768px) - come la tua query */
 @media (min-width: 501px) and (max-width: 768px) {
     .full-width-title h1 {
         font-size: 2em;
@@ -341,56 +379,9 @@ footer {
 
     .content-box {
         padding: 25px;
-        flex-direction: row;
-        align-items: center;
-        text-align: left;
+        flex-direction: column; /* Cambia in colonna per centrare meglio */
+        align-items: center; /* Centra orizzontalmente */
+        text-align: center; /* Centra il testo */
+        max-width: 70%; /* Aumenta la larghezza per centrare*/
+        }
     }
-
-    .content-box img {
-        max-width: 30%;
-        margin-right: 15px;
-    }
-
-    .content-box-right {
-        flex-direction: row-reverse;
-        text-align: right;
-    }
-
-    .content-box-right img {
-        max-width: 30%;
-        margin-left: 15px;
-    }
-
-    .content-box h2, .content-box-right h2 {
-        font-size: 1.6em;
-        text-align: left;
-    }
-
-    .content-box-right h2 {
-        text-align: right;
-    }
-
-    .content-box p, .content-box-right p {
-        font-size: 1.1em;
-    }
-
-    /* Stili specifici per .content-box-spiegazioni su tablet */
-    .content-box-spiegazioni {
-        max-width: 70%; /* Aumenta leggermente la larghezza su tablet */
-        margin-left: auto; /* Centra orizzontalmente */
-        margin-right: auto;
-        margin-top: 8%; /* Regola il margine superiore */
-        padding: 22px;
-        border-radius: 30px; /* Angoli leggermente meno arrotondati */
-        font-size: 150%; /* Adatta la dimensione del testo */
-    }
-
-    .content-box-spiegazioni h2 {
-        font-size: 1.8em;
-        margin-bottom: 15px;
-    }
-
-    .content-box-spiegazioni p {
-        font-size: 1.1em;
-    }
-}
