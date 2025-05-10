@@ -351,6 +351,13 @@ footer {
         /* Potresti aggiungere altri stili specifici per schermi piccoli qui, se necessario */
     }
 }
+@media (max-width: 500px) {
+    .table td, .table th {
+      font-size: 0.85em;
+      word-break: break-word;
+    }
+  }
+  
 
 /* Stili per schermi medi (da 501px a 768px) - come la tua query */
 @media (min-width: 501px) and (max-width: 768px) {
