@@ -354,12 +354,12 @@ footer {
 @media (max-width: 500px) {
     .table td, .table th {
       font-size: 0.85em;
-      word-break: break-word;
+      word-wrap: none;;
     }
   }
   
 
-/* Stili per schermi medi (da 501px a 768px) - come la tua query */
+/* Stili per schermi medi (da 501px a 768px)  */
 @media (min-width: 501px) and (max-width: 768px) {
     .full-width-title h1 {
         font-size: 2em;
